@@ -1,0 +1,9 @@
+/* common responsive */
+body {min-width:320px;}
+
+@media screen and (max-width:1300px){
+    header nav {display:none;}
+    header .ask {display:none;}
+    header #m_nav_btn {display:flex;}
+    header .m_nav_open {display:block;}
+}
