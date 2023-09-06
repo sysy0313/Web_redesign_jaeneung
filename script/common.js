@@ -30,6 +30,7 @@ const m_nav_open = document.querySelector('.m_nav_open')
 m_nav_btn.addEventListener('click', function(e){
     e.preventDefault();
     m_nav_open.classList.toggle('active')
+    header.classList.toggle('active')
 })
 
 

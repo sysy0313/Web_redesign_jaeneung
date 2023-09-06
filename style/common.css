@@ -43,7 +43,7 @@ header nav #gnb > li .sub {
 header nav #gnb > li .sub.active {
     transform:scale(1); transition-delay:0.2s;
 }
-header nav #gnb > li .sub li {margin-bottom:35px;}
+header nav #gnb > li .sub li {margin-bottom:25px;}
 header nav #gnb > li .sub li:last-child {margin-bottom:0;}
 header nav #gnb > li .sub li a {
     display:block; padding:5px;
@@ -139,23 +139,32 @@ footer .f_top .left .fnb {}
 footer .f_top .left .fnb a {
     font-size:1.313rem; letter-spacing:-0.02em; margin-right:20px;
 }
+footer .f_top .left .fnb a:hover {text-decoration:underline; font-weight:700;}
 footer .f_top .left .fnb a:last-child {margin-right:0;}
 /* right */
 footer .f_top .right {
     display:flex; align-items:center;
 }
 footer .f_top .right .sns {margin-right:30px;}
-footer .f_top .right .sns a {margin-right:20px;}
+footer .f_top .right .sns a {
+    margin-right:20px; width:40px; height:40px; display:inline-block;
+    background-repeat:no-repeat; 
+    text-indent:-9999px; transition:all 0.3s linear;
+}
+footer .f_top .right .sns a:nth-child(1) {background-image:url(../images/sns_01.png)}
+footer .f_top .right .sns a:nth-child(1):hover {background-image:url(../images/sns_01_hover.png)}
+footer .f_top .right .sns a:nth-child(2) {background-image:url(../images/sns_02.png)}
+footer .f_top .right .sns a:nth-child(2):hover {background-image:url(../images/sns_02_hover.png)}
+footer .f_top .right .sns a:nth-child(3) {background-image:url(../images/sns_03.png)}
+footer .f_top .right .sns a:nth-child(3):hover {background-image:url(../images/sns_03_hover.png)}
 footer .f_top .right .sns a:last-child {margin-right:0;}
-footer .f_top .right .sns a img {}
 footer .f_top .right .family_site {
     display:flex; padding:10px 15px;
-    background: var(--Linear, linear-gradient(180deg, #FF555C 0%, #EC1C24 100%));
-
+    background: var(--Linear, linear-gradient(180deg, #FF555C 0%, #EC1C24 100%))
 }
+footer .f_top .right .family_site:hover {background:#FFB830;}
 footer .f_top .right .family_site span {color:#fff; font-size:1.313rem;}
 footer .f_top .right .family_site img {}
 footer address {
     font-size:1.313rem; letter-spacing:-0.04em; line-height:35px;
 }
-

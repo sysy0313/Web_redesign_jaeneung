@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상담신청 | 재능교육</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon"> 
+    <!-- style -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/common_responsive.css">
+    <link rel="stylesheet" href="./style/ask.css">
+</head>
+<body>
+    <!-- header -->
+    <main>
+        <section id="bnr">
+            <div class="txt">
+                <p>
+                    <span>우리아이 </span>
+                    <em>첫 공부습관 </em>
+                    <span>만들기</span>
+                </p>
+                <h1>
+                    <span>재능 스스로</span>
+                    <em>무료상담신청</em>
+                </h1>
+            </div>
+        </section>
+        <section id="contents">
+            <form action="#" method="get" id="ask_form">
+                <fieldset>
+                    <legend class="skip">상담신청양식</legend>
+                    <dl id="name">
+                        <dt>자녀이름 <span>*</span></dt>
+                        <dd><input type="text" name="name_input" id="name_input"></dd>
+                    </dl>
+                    <dl id="age">
+                        <dt>자녀연령 <span>*</span></dt>
+                        <dd>
+                            <label>
+                                <input type="radio" name="age" id="child">
+                                <span>유아 (만3세~5세)</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="age" id="grade1">
+                                <span>초등 (1~2학년)</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="age" id="grade2">
+                                <span>초등 (3~4학년)</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="age" id="grade3">
+                                <span>초등 (5~6학년)</span>
+                            </label>
+                        </dd>
+                    </dl>
+                    <dl id="phone">
+                        <dt>학부모휴대폰 <span>*</span></dt>
+                        <dd>
+                            <input type="text" name="number_first" id="number_first" placeholder="010" readonly>
+                            <span>-</span>
+                            <input type="text" name="number_middle" id="number_middle">
+                            <span>-</span>
+                            <input type="text" name="number_last" id="number_last">
+                        </dd>
+                    </dl>
+                    <dl id="study_type">
+                        <dt>학습형태 <span>*</span></dt>
+                        <dd>
+                            <label>
+                                <input type="radio" name="type" id="type_home">
+                                <span>집에서</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="type" id="type_center">
+                                <span>센터에서</span>
+                            </label>
+                        </dd>
+                    </dl>
+                    <dl id="address">
+                        <dt>주소</dt>
+                        <dd>
+                            <input type="text" id="sample6_postcode" placeholder="우편번호">
+                            <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기" id="address_btn">
+                            <span>주소를 남겨주시면 더 자세한 상담이 가능합니다.</span>
+                            <br>
+                            <input type="text" id="sample6_address" placeholder="주소"><br>
+                            <input type="text" id="sample6_detailAddress" placeholder="상세주소">
+                            <input type="text" id="sample6_extraAddress" placeholder="참고항목">
+                        </dd>
+                    </dl>
+                    <dl id="ask_contents">
+                        <dt>상담내용</dt>
+                        <dd>
+                            <textarea name="ask_box" id="ask_box" cols="30" rows="10" ></textarea>
+                        </dd>
+                    </dl>
+                    <dl id="agree_check">
+                        <dt>개인정보 수집 및 이용 동의</dt>
+                        <dd>
+                            <label>
+                                <input type="radio" name="agree_input" id="agree">
+                                <span>동의합니다.</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="agree_input" id="disagree">
+                                <span>동의하지 않습니다.</span>
+                            </label>
+                        </dd>
+                    </dl>
+                    <p>당사는 귀하의 개인정보보호를 매우 중요시하며,『개인정보보호법』상의 개인정보보호 규정을 준수하고 있습니다.<br>
+
+                        1. 개인정보의 수집•이용 목적<br>
+                        - 홈페이지 내 무료상담신청 메뉴를 통한 수집<br>
+                        - 맞춤식 종합 교육서비스의 제공<br>
+                        2. 수집•이용하는 개인정보 항목<br>
+                        - 필수항목 : 이름(자녀이름), 연령, 전화번호<br>
+                        - 선택항목 : 주소, 상담내용<br>
+                        3. 개인정보의 보유 및 이용기간<br>
+                        회사는 개인정보의 수집 및 이용 목적을 달성할 때까지 고객이 제공한 모든 개인 정보를 보유 및 이용하게 되며 고객이 이용동의를 철회하는 경우에는 고객의 개인 정보를 재생 불가능한 방법으로 지체 없이 저장 장치에서 삭제하여 어떠한 방법으로도 열람 또는 이용할 수 없도록 만듭니다.
+                        다만, 관계법령에서 일정한 보관기간을 정한 경우는 예외로 합니다. 이 경우 회사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.<br>
+                        
+                        - 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년<br>
+                        - 방문에 관한 기록 : 3개월</p>
+                    <button type="button" id="ask_btn">신청하기</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <!-- footer -->
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="./script/ask.js"></script>
+
+</body>
+</html>

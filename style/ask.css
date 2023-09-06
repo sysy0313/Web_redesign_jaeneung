@@ -1,0 +1,148 @@
+main {}
+/* bnr */
+main #bnr {
+    background:url(../images/bnr.jpg) no-repeat; height:400px;
+    background-size:cover;
+    display:flex; flex-flow:column nowrap; justify-content:center;
+}
+main #bnr .txt{padding-left:100px;}
+main #bnr .txt p {margin-bottom:20px;}
+main #bnr .txt p span {
+    font-family:'aggro_l'; font-size:1.375rem; letter-spacing:-0.02em; 
+}
+main #bnr .txt p em {font-family:'aggro_l'; font-size:1.375rem; letter-spacing:-0.02em; color:#3DB2FF;}
+main #bnr .txt h1 {}
+main #bnr .txt h1 span {
+    display:block; font-family:'aggro_m'; 
+    font-size:3.938rem; letter-spacing:-0.02em; margin-bottom:20px;
+}
+main #bnr .txt h1 em {
+    display:block; font-family:'aggro_m';
+    font-size:5rem; letter-spacing:-0.02em;
+    color:#EC1C24}
+/* contents */
+main #contents {
+    width:1440px; margin:0 auto;
+    padding:100px 0; 
+}
+main #contents #ask_form {position:relative;}
+main #contents #ask_form fieldset {}
+main #contents #ask_form fieldset dl {
+    display:flex; align-items:center;
+    margin-bottom:50px;
+}
+main #contents #ask_form fieldset dl:last-child {margin-bottom:0;}
+main #contents #ask_form fieldset dl dt {
+    width:190px; 
+    font-size:1.313rem; letter-spacing:-0.02em; 
+}
+main #contents #ask_form fieldset dl dt span {font-size:1.313rem; letter-spacing:-0.02em; color:#FFB830;}
+main #contents #ask_form fieldset dl dd {}
+/* 이름 */
+main #contents #ask_form fieldset #name dd #name_input {
+    background:#FFFBE7;
+    width:255px; height:32px;
+    border-radius:5px;
+}
+/* 연령 */
+main #contents #ask_form fieldset #age dd label {margin-right:30px;}
+main #contents #ask_form fieldset #age dd label input {appearance:none;}
+main #contents #ask_form fieldset #age dd label input:checked~span {background:url(../images/check.png) no-repeat;}
+main #contents #ask_form fieldset #age dd label span {
+    background:url(../images/uncheck.png) no-repeat; 
+    display:inline-block; padding-left:30px;
+    font-size:1.313rem; letter-spacing:-0.02em; 
+}
+/* 학부모휴대폰 */
+main #contents #ask_form fieldset #phone {}
+main #contents #ask_form fieldset #phone dt {}
+main #contents #ask_form fieldset #phone dd {}
+main #contents #ask_form fieldset #phone dd input {
+    background:#FFFBE7; border-radius:5px; height:32px;
+    text-align:center;
+}
+main #contents #ask_form fieldset #phone dd #number_first::placeholder {font-size:1.313rem; letter-spacing:-0.02em;}
+main #contents #ask_form fieldset #phone dd #number_middle {}
+main #contents #ask_form fieldset #phone dd #number_last {}
+/* 학습형태 */
+main #contents #ask_form fieldset #study_type {}
+main #contents #ask_form fieldset #study_type dt {}
+main #contents #ask_form fieldset #study_type dd {}
+main #contents #ask_form fieldset #study_type dd label {margin-right:30px;}
+main #contents #ask_form fieldset #study_type dd label input {appearance:none;}
+main #contents #ask_form fieldset #study_type dd label input:checked~span {background:url(../images/check.png) no-repeat;}
+main #contents #ask_form fieldset #study_type dd label span {
+    background:url(../images/uncheck.png) no-repeat; 
+    display:inline-block; padding-left:30px;
+    font-size:1.313rem; letter-spacing:-0.02em; 
+}
+/* 주소 */
+main #contents #ask_form fieldset #address {
+    align-items:flex-start;
+}
+main #contents #ask_form fieldset #address dt {}
+main #contents #ask_form fieldset #address dd {
+    width:calc(100% - 190px)
+
+}
+main #contents #ask_form fieldset #address dd input {
+    background:#FFFBE7; border-radius:5px; height:32px;
+    margin-bottom:15px; padding:0 10px;
+}
+main #contents #ask_form fieldset #address dd input::placeholder {font-size:1.313rem; letter-spacing:-0.02em;}
+main #contents #ask_form fieldset #address dd #sample6_postcod {}
+main #contents #ask_form fieldset #address dd #address_btn {
+    border-radius: 10px;
+    background: var(--Linear, linear-gradient(180deg, #FF555C 0%, #EC1C24 100%));
+    color:#fff; width:113px; height:31px;
+    cursor:pointer;
+}
+main #contents #ask_form fieldset #address dd #address_btn:hover {background:#FFB830}
+main #contents #ask_form fieldset #address dd span {
+    
+}
+main #contents #ask_form fieldset #address dd #sample6_address {width:100%;}
+main #contents #ask_form fieldset #address dd #sample6_detailAddress {width:100%;}
+main #contents #ask_form fieldset #address dd #sample6_extraAddress {width:100%;}
+/* 상담내용 */
+main #contents #ask_form fieldset #ask_contents {align-items:flex-start;}
+main #contents #ask_form fieldset #ask_contents dt {}
+main #contents #ask_form fieldset #ask_contents dd {width:calc(100% - 190px)}
+main #contents #ask_form fieldset #ask_contents dd #ask_box {
+    width:100%; height:190px; resize:none; border-radius:5px; border:none; background:#FFFBE7;
+    padding:10px;
+}
+#개인정보수집
+main #contents #ask_form fieldset #agree_check {}
+main #contents #ask_form fieldset #agree_check dt {
+    width:300px;
+}
+main #contents #ask_form fieldset #agree_check dd {
+}
+main #contents #ask_form fieldset #agree_check dd label {margin-right:30px;}
+main #contents #ask_form fieldset #agree_check dd label input {appearance:none;}
+main #contents #ask_form fieldset #agree_check dd label input:checked~span {
+    background:url(../images/check.png) no-repeat;
+}
+main #contents #ask_form fieldset #agree_check dd label span {
+    font-size:1.313rem; letter-spacing:-0.02em;
+    background:url(../images/uncheck.png) no-repeat;
+    padding-left:30px;
+}
+main #contents #ask_form fieldset #agree_check dd label #agree{}
+main #contents #ask_form fieldset #agree_check dd label #disagree{}
+main #contents #ask_form fieldset p {
+    width:100%; height:190px; overflow:scroll;
+    padding:10px;
+    background:#FFFBE7;
+    font-size:1.313rem; letter-spacing:-0.02em; line-height:32px;
+    margin-bottom:50px;
+}
+main #contents #ask_form fieldset #ask_btn {
+    text-align:center;
+    border-radius: 50px; 
+    background: var(--Linear, linear-gradient(180deg, #FF555C 0%, #EC1C24 100%));
+    padding:15px 50px; font-size:1.750rem; font-weight:700; color:#fff;
+    position:absolute; left:50%; transform:translateX(-50%)
+}
+main #contents #ask_form fieldset #ask_btn:hover {background:#FFB830}

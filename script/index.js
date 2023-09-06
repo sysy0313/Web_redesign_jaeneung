@@ -59,3 +59,24 @@ const notice_slide = new Swiper('#notice_slide',{
     slidesPerView:'3',
     spaceBetween:'20'
 });
+// 스크롤 트리거
+gsap.fromTo('#curriculum .cha', {
+    //from
+    y:200,
+},{
+    //to
+    y:0,
+    duration:0.7,
+    scrollTrigger:'#curriculum'
+}
+);
+gsap.fromTo('#notice .cha', {
+    //from
+    y:200,
+},{
+    //to
+    y:0,
+    duration:0.7,
+    scrollTrigger:'#notice'
+}
+);
