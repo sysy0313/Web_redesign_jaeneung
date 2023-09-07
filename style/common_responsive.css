@@ -1,9 +1,50 @@
 /* common responsive */
-body {min-width:320px;}
+header, main, footer {min-width:320px;}
 
 @media screen and (max-width:1300px){
+    /* 모바일 nav로 바뀜 */
     header nav {display:none;}
     header .ask {display:none;}
     header #m_nav_btn {display:flex;}
     header .m_nav_open {display:block;}
+}/* 1300 end */
+@media screen and (max-width:1200px){
+    /* footer */
+    footer .f_top {
+        flex-flow:column nowrap;
+    }
+    footer .f_top .left .logo {margin-bottom:20px;}
+    footer .f_top .left {
+        flex-flow:column nowrap; margin-bottom:20px;
+    }
+    footer address {text-align:center}
+}/* 1200 end */
+@media screen and (max-width:800px){
+    /* header size */
+    header {height:80px;}
+    header .m_nav_open {top:80px; width:100%;}
+    /* footer padding */
+    footer {padding:50px 15px;}
+    /* footer address */
+    footer address {font-size:1rem; line-height:30px;}
+}/* 800 end */
+@media screen and (max-width:600px){
+    /* 로고크기 */
+    header h1 {width:200px;}
+    footer .f_top .left .logo {width:200px;}
+}/* 600 end */
+@media screen and (max-width:480px){
+    /* footer padding */
+    footer {padding:30px 15px 50px;}
+    footer .f_top .left .fnb a {font-size:1rem;}
+    footer .f_top .right .sns {margin-right:20px;}
+    footer .f_top .right .sns a {width:30px; height:30px; margin-right:10px;}
+    footer .f_top .right .family_site span {font-size:0.9rem;}
+    /* footer address */
+    footer address {font-size:0.9rem; line-height:27px;}
 }
+@media screen and (max-width:400px){
+    /* 로고크기 */
+    header h1 {width:165px;}
+    footer .f_top .left .logo {width:165px;}
+}/* 400 end */

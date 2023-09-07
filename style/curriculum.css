@@ -1,0 +1,113 @@
+/* curriculum css */
+main {}
+.wrap {width:1440px; margin:0 auto;}
+/* title_section */
+main #title_section {
+    padding:100px 0;
+}
+main #title_section .wrap {}
+main #title_section .wrap .title {text-align:center; margin-bottom:65px; animation:title 1s linear;}
+main #title_section .wrap .title > * {margin-bottom:20px;}
+main #title_section .wrap .title > *:last-child {margin-bottom:0;}
+main #title_section .wrap .title h1 {
+    font-family:'aggro_l';
+    font-size:1.875rem; letter-spacing:-0.02em;
+}
+main #title_section .wrap .title p:nth-child(2) {
+    font-family:'aggro_l';
+    font-size:3rem; letter-spacing:-0.02em;
+}
+main #title_section .wrap .title p:nth-child(3) {
+    font-family:'aggro_m';
+    font-size:3rem; letter-spacing:-0.02em; color:#EC1C24;
+}
+main #title_section .wrap .img {
+    display:flex; justify-content:center;
+}
+main #title_section .wrap .img p {
+    margin-right:55px;
+    opacity:0;
+}
+main #title_section .wrap .img p img {}
+main #title_section .wrap .img p:nth-child(1) {animation:scale 1s forwards;}
+main #title_section .wrap .img p:nth-child(2) {animation:scale 1s 0.5s forwards;}
+main #title_section .wrap .img p:nth-child(3) {animation:scale 1s 1s forwards;}
+/* desc section */
+main #txt {
+    background:#f1f1f1; padding:100px 0; text-align:center;
+}
+main #txt .wrap {}
+main #txt .wrap h2 {
+    font-family:'aggro_l'; 
+    font-size:2.250rem; letter-spacing:-0.02em; margin-bottom:60px;
+    
+}
+main #txt .wrap h2.active {
+    animation:title 2s forwards;
+}
+main #txt .wrap p {
+    font-size:1.313rem; letter-spacing:-0.02em; line-height:45px;
+}
+/* book_section */
+main #book_section {
+    padding:100px 0;
+}
+main #book_section .line {margin-bottom:80px;}
+main #book_section .line1 {}
+main #book_section .line2 {}
+main #book_section .line3 {display:flex; align-items:center;}
+main #book_section .line4 {display:flex; align-items:center;}
+main #book_section .line > * {margin-right:40px;}
+main #book_section .line > *:last-child {margin-right:0;}
+main #book_section .line .subject:last-child {margin-right:0;}
+main #book_section .line .subject h2 {
+    display:inline-block;
+    padding:15px 20px 10px; background:#EC1C24; border-radius:50px;
+    font-family:'aggro_m'; 
+    font-size:1.750rem; letter-spacing:-0.04em; 
+    color:#fff;
+    margin-bottom:30px;
+}
+main #book_section .line .subject ul {
+    display:flex;
+}
+main #book_section .line .subject ul li {margin-right:20px;}
+main #book_section .line .subject ul li:last-child {margin-right:0;}
+main #book_section .line .subject ul li a {text-align:center; }
+main #book_section .line .subject ul li a >* {margin-bottom:25px;}
+main #book_section .line .subject ul li a >*:last-child {margin-bottom:0}
+main #book_section .line .subject ul li a .book {}
+main #book_section .line .subject ul li a .book img {transition:all 0.2s;}
+main #book_section .line .subject ul li a:hover .book img {transform:scale(1.05)} 
+main #book_section .line .subject ul li a h3 {
+    font-family:'aggro_m'; 
+    font-size:1.750rem; letter-spacing:-0.04em;
+    transition:all 0.2s;
+}
+main #book_section .line .subject ul li a:hover h3 {color:#FFB830}
+main #book_section .line .subject ul li a .info {
+    font-size:1.313rem; letter-spacing:-0.04em;
+}
+main #book_section .line .subject ul li a .age {}
+main #book_section .line .subject ul li a .age span {
+    background:#FFB830;
+    font-size:1.313rem; letter-spacing:-0.04em; padding:8px 15px; border-radius:30px; 
+    color:#fff; font-weight:700;
+    margin-right:30px;
+}
+main #book_section .line .subject ul li a .age em {
+    font-size:1.313rem; letter-spacing:-0.0.4em; 
+}
+/* 과목구분선 */
+.border {
+    height:50px; width:2px; background:#dedede;
+}
+/* @keyframes */
+@keyframes scale {
+    0% {transform:scale(0); opacity:0;}
+    100% {transform:scale(1); opacity:1;}
+}
+@keyframes title {
+    0% {transform:translateY(100px); opacity:0;}
+    100% {transform:translateY(0); opacity:1;}
+}

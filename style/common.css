@@ -100,7 +100,7 @@ header .m_nav_open #m_gnb > li > a {
 header .m_nav_open #m_gnb > li:hover > a {color:#EC1C24;}
 header .m_nav_open #m_gnb > li:hover > a::after {transform:scale(1)}
 header .m_nav_open #m_gnb > li > .sub {
-    background:#eee;
+    background:#efefef;
     padding:15px 0; margin-top:20px;
     display:none;
 }
@@ -148,7 +148,7 @@ footer .f_top .right {
 footer .f_top .right .sns {margin-right:30px;}
 footer .f_top .right .sns a {
     margin-right:20px; width:40px; height:40px; display:inline-block;
-    background-repeat:no-repeat; 
+    background-repeat:no-repeat; background-size:cover;
     text-indent:-9999px; transition:all 0.3s linear;
 }
 footer .f_top .right .sns a:nth-child(1) {background-image:url(../images/sns_01.png)}

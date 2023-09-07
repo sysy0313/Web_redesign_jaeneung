@@ -1,0 +1,184 @@
+/* index 반응형 */
+@media screen and (max-width:1500px){
+    .wrap {width:1200px;}
+    /* self_test */
+    main #self_test .wrap .top .title p {font-size:1.5rem; line-height:35px;}
+    /* curriculum */
+    main #curriculum .wrap .contents #curriculum_slide {
+        width:calc(100% - 420px); margin-right:20px;
+    }
+    main #curriculum .wrap .contents .search {width:400px;}
+    /* notice */
+    main #notice .wrap .contents #notice_slide .swiper-wrapper .swiper-slide a > * {margin-bottom:20px;}
+}/* 1500 end */
+@media screen and (max-width:1300px){
+     /* visual */
+    main #visual #visual_slide .swiper-wrapper .swiper-slide {
+        background-position:right bottom;
+        padding-left:100px;
+    }
+    /* self_test */
+    main #self_test {padding:70px 0;}
+    /* curriculum */
+    main #curriculum {padding:70px 0;}
+    /* notice */
+    main #notice {padding:70px 0;}
+}/* 1300 end */
+@media screen and (max-width:1250px){
+    .wrap {width:1000px;}
+    /* self_test */
+    main #self_test .wrap .btm {top:0;}
+    /* notice */
+    main #notice .wrap .contents #notice_slide .swiper-wrapper .swiper-slide a > * {margin-bottom:15px;}
+    main #notice .wrap .contents #notice_slide .swiper-wrapper .swiper-slide a .notice_contents {font-size:1rem;}
+}/* 1250 end */
+@media screen and (max-width:1100px){
+    /* visual */
+    main #visual #visual_slide .swiper-wrapper .swiper-slide {
+        background-position-x:80%;
+    }
+    /* bnr */
+    main #bnr .bnr_wrap {width:100%;}
+    main #bnr .bnr_wrap .img {position:absolute; bottom:0; left:30px;}
+}/* 1100 end */
+@media screen and (max-width:1050px){
+    .wrap {width:800px;}
+    /* self_test */
+    main #self_test {padding-bottom:130px;}
+    main #self_test  .wrap .top .title h2 {font-size:2rem; margin-bottom:10px;}
+    main #self_test .wrap .top .title p {font-size:1.3rem; line-height:35px;}
+    main #self_test .wrap .top .ask {font-size:1.5rem; width:220px; height:40px; padding-top:10px;}
+    main #self_test .wrap .btm {top:50px;}
+    /* curriculum */
+    main #curriculum .wrap .title h2 {margin-bottom:20px;}
+    main #curriculum .wrap .title h2 span {font-size:2rem;}
+    main #curriculum .wrap .title h2 em {font-size:2rem;}
+    /* notice */
+    main #notice .wrap .title h2 {font-size:2rem; margin-bottom:20px;}
+    /* aside */
+    aside {
+    width:100%;
+    left:50%; bottom:0; transform:translateX(-50%); display:flex;
+    }
+    aside a {
+        width:50%; border-radius:0; margin-bottom:0;
+        border-top-left-radius:30px;
+        border-top-right-radius:30px;
+    }
+}/* 1050 end */
+@media screen and (max-width:850px){
+    .wrap {width:calc(100% - 30px)}
+    /* curriculum */
+    main #curriculum .wrap .contents #curriculum_slide .swiper-wrapper .swiper-slide a {height:300px;}
+    main #curriculum .wrap .contents #curriculum_slide .swiper-wrapper .swiper-slide a .img {height:40%;} 
+    main #curriculum .wrap .contents #curriculum_slide {width:50%;}
+    main #curriculum .wrap .contents .search {width:50%; height:300px;}
+    main #curriculum .wrap .contents .search > * {margin-bottom:20px;}
+    main #curriculum .wrap .contents .search h3 em {font-size:1.5rem;}
+    main #curriculum .wrap .contents .search h3 span {height:17px;}
+    main #curriculum .wrap .contents .search .line1 #age {font-size:1rem;}
+    main #curriculum .wrap .contents .search .line1 #age option {font-size:1rem;}
+    main #curriculum .wrap .contents .search .line1 p {font-size:1rem;}
+    main #curriculum .wrap .contents .search .line2 #study_type {font-size:1rem;}
+    main #curriculum .wrap .contents .search .line2 #study_type option {font-size:1rem;}
+    main #curriculum .wrap .contents .search .line2 p {font-size:1rem;}
+    main #curriculum .wrap .contents .search .line2 p em {font-size:1rem;}
+    main #curriculum .wrap .contents .search .line3 {font-size:1rem;}
+    main #curriculum .wrap .contents .search #ask_curriculum {font-size:1rem; padding:11px 21px 8px;}
+}/* 850 end */
+@media screen and (max-width:800px){
+    /* visual */
+    main #visual #visual_slide .swiper-wrapper .swiper-slide {
+        align-items:flex-start; padding:150px 0 0 0; text-align:center;
+    }
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .slide_title {margin:0 auto;}
+    main #visual #visual_slide .slide1 {background-image:url(../images/visual_mobile01.jpg)}
+    main #visual #visual_slide .slide2 {background-image:url(../images/visual_mobile02.jpg)}
+    main #visual #visual_slide .slide3 {background-image:url(../images/visual_mobile03.jpg)}
+    main #visual #visual_slide .deco_wrap .deco {display:none;}
+    /* bnr */
+    main #bnr {height:120px;}
+    main #bnr .bnr_wrap {width:100%; height:120px;}
+    main #bnr .bnr_wrap .img {width:130px;}
+    main #bnr .bnr_wrap .img img {width:100%;}
+    main #bnr .bnr_wrap .bnr_title p {font-size:1rem; margin-bottom:15px;}
+    main #bnr .bnr_wrap .bnr_title h2 {font-size:1.5rem;}
+}/* 800 end */
+@media screen and (max-width:700px){
+    /* curriculum */
+    main #curriculum .wrap .contents {flex-flow:column nowrap;}
+    main #curriculum .wrap .contents #curriculum_slide {width:100%; margin-bottom:20px;}
+    main #curriculum .wrap .contents #curriculum_slide .swiper-wrapper .swiper-slide a .img  {
+        width:100%; height:300px; left:50%; transform:translateX(-50%);
+        background-position:bottom;
+        filter:opacity(0.5)
+    }
+    main #curriculum .wrap .contents .search {width:100%;}
+    main #curriculum .wrap .cha {width:120px; top:5px;}
+    main #curriculum .wrap .cha img {width:100%;}
+    /* notice */
+    main #notice .wrap .cha {width:120px; top:5px;}
+    main #notice .wrap .cha img {width:100%;}
+}/* 700 end */
+@media screen and (max-width:630px){
+    main #curriculum .wrap .cha {display:none;}
+    main #notice .wrap .cha {display:none;}
+    /* bnr */
+    main #bnr {height:100px;}
+    main #bnr .bnr_wrap {width:100%; height:100px;}
+    main #bnr .bnr_wrap .img {display:none;}
+    main #bnr .bnr_wrap .bnr_title {margin-right:20px;}
+    main #bnr .bnr_wrap .go {width:30px; height:30px; font-size:0.9rem; line-height:32px;}
+}/* 630 end */
+@media screen and (max-width:600px){
+    /* visual */
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .slide_title h1 span {font-size:3rem; line-height:60px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .slide_title h1 em {font-size:3rem; line-height:60px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .slide_title p {font-size:1rem;}
+    /* self_test */
+    main #self_test {position:relative; padding-bottom:200px;}
+    main #self_test .wrap .top .ask {position:absolute; bottom:70px; left:50%; transform:translateX(-50%)} 
+    main #self_test .wrap .btm .step a {
+        width:120px; height:120px;
+        font-size:1rem; line-height:25px; padding-top:20px;
+    }
+    /* curriculum */
+    main #curriculum .wrap .contents #curriculum_slide .swiper-wrapper .swiper-slide a h3 em {
+        font-size:1.5rem;
+    }
+}/* 600 end */
+@media screen and (max-width:540px){
+    /* self_test */
+    main #self_test .wrap .btm .step a {
+        width:100px; height:100px; font-size:0.9rem; padding-top:15px; line-height:20px;
+    }
+    /* curriculum */
+    main #curriculum .wrap .title h2 em {display:block; line-height:40px;}
+    main #curriculum .wrap .title h2 span {display:block; line-height:40px;}
+}/* 540 end */
+@media screen and (max-width:450px){
+    /* visual */
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .slide_title h1 span {font-size:2.5rem; line-height:50px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .slide_title h1 em {font-size:2.5rem; line-height:50px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .slide_title p {display:none;}
+    /* self_test */
+    main #self_test .wrap .btm .step a {
+        width:80px; height:80px; font-size:0.78rem; padding-top:10px; line-height:17px;
+    }
+}/* 450 end */
+@media screen and (max-width:380px){
+    main #notice .wrap .title p {font-size:1.2rem; letter-spacing:-0.06em;}
+    /* bnr */
+    main #bnr {height:80px;}
+    main #bnr .bnr_wrap {height:80px;}
+    main #bnr .bnr_wrap .bnr_title p {font-size:0.8rem;}
+    main #bnr .bnr_wrap .bnr_title h2 {font-size:1rem;}
+}/* 380 end */
+@media screen and (max-width:350px){
+    main #curriculum .wrap .contents .search .line2 #study_type {letter-spacing:-0.06rem;}
+    main #curriculum .wrap .contents .search .line2 p {letter-spacing:-0.06rem;}
+    main #curriculum .wrap .contents .search .line2 p em {letter-spacing:-0.06rem;}
+}/* 350 end */
+@media screen and (max-width:320px){
+    aside {display:none;}
+}

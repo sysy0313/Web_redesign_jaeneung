@@ -46,8 +46,14 @@ const curriculum_slide = new Swiper('#curriculum_slide',{
     },
     loop:true, //마지막슬라이드->첫슬라이드 자연스럽게
     effect:'horizontal',
-    slidesPerView:'3',
-    spaceBetween:'20'
+    slidesPerView:'auto',
+    spaceBetween:'20',
+    breakpoints:{
+        //해상도:{옵션:값} 작은값->큰값
+        320:{slidesPerView:1}, //320이상일 때
+        1050:{slidesPerView:2}, //1050이상일 때
+        1250:{slidesPerView:3},//1250이상일 경우 슬라이드 4개 표시
+    },
 });
 const notice_slide = new Swiper('#notice_slide',{
     autoplay:{
@@ -56,8 +62,14 @@ const notice_slide = new Swiper('#notice_slide',{
     },
     loop:true, //마지막슬라이드->첫슬라이드 자연스럽게
     effect:'horizontal',
-    slidesPerView:'3',
-    spaceBetween:'20'
+    slidesPerView:'auto',
+    spaceBetween:'20',
+    breakpoints:{
+        //해상도:{옵션:값} 작은값->큰값
+        320:{slidesPerView:1}, //320이상일 때
+        550:{slidesPerView:2}, //550이상일 때
+        1050:{slidesPerView:3},//1050이상일 경우 슬라이드 4개 표시
+    },
 });
 // 스크롤 트리거
 gsap.fromTo('#curriculum .cha', {

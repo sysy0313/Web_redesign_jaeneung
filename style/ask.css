@@ -43,6 +43,7 @@ main #contents #ask_form fieldset #name dd #name_input {
     background:#FFFBE7;
     width:255px; height:32px;
     border-radius:5px;
+    padding:0 10px;
 }
 /* 연령 */
 main #contents #ask_form fieldset #age dd label {margin-right:30px;}
@@ -132,7 +133,7 @@ main #contents #ask_form fieldset #agree_check dd label span {
 main #contents #ask_form fieldset #agree_check dd label #agree{}
 main #contents #ask_form fieldset #agree_check dd label #disagree{}
 main #contents #ask_form fieldset p {
-    width:100%; height:190px; overflow:scroll;
+    width:100%; height:190px; overflow-y:auto;
     padding:10px;
     background:#FFFBE7;
     font-size:1.313rem; letter-spacing:-0.02em; line-height:32px;
