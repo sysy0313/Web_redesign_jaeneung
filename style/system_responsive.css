@@ -1,0 +1,112 @@
+/* system 반응형 */
+@media screen and (max-width:1700px){
+    main #title .position_wrap .chat_wrap .chat1 {left:10%; top:20%;}
+    main #title .position_wrap .chat_wrap .chat2 {right:10%; top:20%;}
+    main #title .position_wrap .chat_wrap .chat3 {left:5%; top:40%;}
+    main #title .position_wrap .chat_wrap .chat4 {right:5%; top:40%;}
+}/* 1700end */
+@media screen and (max-width:1500px){
+    .wrap {width:1300px}
+}/* 1500 end */
+@media screen and (max-width:1420px){
+    main #title .position_wrap .chat_wrap .chat1 {left:7%; top:20%;}
+    main #title .position_wrap .chat_wrap .chat2 {right:7%; top:20%;}
+    main #title .position_wrap .chat_wrap .chat3 {left:3%; top:40%;}
+    main #title .position_wrap .chat_wrap .chat4 {right:3%; top:40%;}
+}/* 1420 end */
+@media screen and (max-width:1300px){
+    main #title .position_wrap .chat_wrap .chat {
+        width:320px; height:200px; padding:30px 30px;
+        font-size:1.15rem; line-height:30px;
+    }
+}/* 1300 end */
+@media screen and (max-width:1350px){
+    .wrap {width:1200px;}
+}/* 1350 end */
+@media screen and (max-width:1250px){
+    .wrap {width:1000px;}
+    /* contents1 */
+    main #contents1 .wrap ul li .info h3 {margin-bottom:15px;}
+    main #contents1 .wrap ul li .info h3 em {font-size:1.7rem;}
+    main #contents1 .wrap ul li .info .desc {font-size:1.5rem;}
+    /* contents2 */
+    main #contents2 ul li .wrap .txt .title {margin-bottom:20px;}
+    main #contents2 ul li .wrap .txt .title p {font-size:1.5rem; padding:10px 20px;}
+    main #contents2 ul li .wrap .txt .title h3 {font-size:2rem;}
+    main #contents2 ul li .wrap .txt .info {font-size:1.5rem;}
+}/* 1250 end */
+@media screen and (max-width:1140px){
+    /* position */
+    main #title .position_wrap .chat_wrap .chat1 {left:3%; top:20%;}
+    main #title .position_wrap .chat_wrap .chat2 {right:3%; top:20%;}
+    main #title .position_wrap .chat_wrap .chat3 {left:1%; top:40%;}
+    main #title .position_wrap .chat_wrap .chat4 {right:1%; top:40%;}
+}/* 1140 end */
+@media screen and (max-width:1050px){
+    .wrap {width:calc(100% - 30px)}
+    main #contents2 ul li {height:400px;}
+    main #contents2 ul li .wrap .photo {
+        width:350px; height:350px;
+    }
+}/* 1050 end */
+@media screen and (max-width:1000px){
+    main #contents1 .wrap h2 span {display:block; line-height:60px;}
+    main #contents1 .wrap h2 em {display:block; line-height:60px;}
+    main #contents2 ul li .wrap .photo {
+        width:280px; height:280px;
+    }
+}/* 1000 end */
+@media screen and (max-width:950px){
+    main #contents1 .wrap ul li .img {width:30%;}
+    main #contents1 .wrap ul li .info {width:60%;}
+}/* 950 end */
+@media screen and (max-width:900px){
+    /* contents2 */
+    main #contents2 ul li .wrap .txt .title {margin-bottom:15px;}
+    main #contents2 ul li .wrap .txt .title p {font-size:1.2rem; padding:8px 20px 5px;}
+    main #contents2 ul li .wrap .txt .title h3 {font-size:1.5rem;}
+    main #contents2 ul li .wrap .txt .info {font-size:1.3rem;}
+}/* 900 end */
+@media screen and (max-width:800px){
+    main #contents1 .wrap ul li .img {width:27%;}
+    main #contents1 .wrap ul li .info {width:65%;}
+}/* 800 end */
+@media screen and (max-width:740px){
+    main #contents1 .wrap ul li .img {height:100px;}
+    main #contents1 .wrap ul li .info h3 em {font-size:1.5rem;}
+    main #contents1 .wrap ul li .info .desc {font-size:1.2rem;}
+    main #contents2 ul li {height:300px;}
+    main #contents2 ul li .wrap .photo {width:200px; height:200px;}
+}/* 740 end */
+@media screen and (max-width:670px){
+    main #contents2 ul li .wrap .photo {display:none;}
+    main #contents2 ul li .wrap .txt {width:100%;}
+}/* 670 end */
+@media screen and (max-width:600px){
+    main #contents1 .wrap h2 span {font-size:2rem; line-height:50px;}
+    main #contents1 .wrap h2 em  {font-size:2.5rem; line-height:50px;}
+    main #contents1 .wrap ul li .info h3 {margin-bottom:5px;}
+    main #contents1 .wrap ul li .info h3 em {font-size:1.3rem;}
+    main #contents1 .wrap ul li .info .desc {font-size:1rem; line-height:30px;}
+    main #contents2 h2 em {font-size:2.5rem; line-height:50px;}
+    main #contents2 h2 span {font-size:2rem; line-height:50px;}
+}/* 600 end */
+@media screen and (max-width:510px){
+    main #contents1 .wrap ul li {flex-flow:column nowrap; border-radius:50px;}
+    main #contents1 .wrap ul li .img {height:80px; margin-bottom:20px;}
+    main #contents1 .wrap ul li:first-child .img {width:150px;}
+    main #contents1 .wrap ul li .info {width:100%; text-align:center;}
+}/* 510 end */
+@media screen and (max-width:470px){
+    main #contents2 ul li .wrap .txt .title {flex-flow:column nowrap; align-items:center;}
+    main #contents2 ul li .wrap .txt .title p {margin-right:0; margin-bottom:20px;}
+}
+@media screen and (max-width:440px){
+    main #contents1 .wrap ul li .info .desc {font-size:0.9rem; line-height:28px;}
+}
+@media screen and (max-width:400px){
+    main #contents1 .wrap h2 span {font-size:1.8rem; line-height:40px;}
+    main #contents1 .wrap h2 em  {font-size:2rem; line-height:40px;}
+    main #contents2 h2 em {font-size:2rem; line-height:40px;}
+    main #contents2 h2 span {font-size:1.8rem; line-height:40px;}
+}

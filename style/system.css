@@ -43,7 +43,7 @@ main #title .position_wrap .bg {
     bottom:10%; 
     left:50%; transform:translateX(-50%);
     z-index:5;
-    animation:que 5s linear forwards;
+    animation:que 3s linear forwards;
 }
 main #title .position_wrap .chat_wrap {}
 main #title .position_wrap .chat_wrap .chat {
@@ -59,9 +59,9 @@ main #title .position_wrap .chat_wrap .chat {
 main #title .position_wrap .chat_wrap .chat_left {background-image:url(../images/bubble_left.png)}
 main #title .position_wrap .chat_wrap .chat_right {background-image:url(../images/bubble_right.png)}
 main #title .position_wrap .chat_wrap .chat1 {left:15%; top:20%; animation:chat 1s linear forwards;}
-main #title .position_wrap .chat_wrap .chat2 {right:15%; top:20%; animation:chat 1s linear 1s forwards;;}
-main #title .position_wrap .chat_wrap .chat3 {left:10%; top:40%; animation:chat 1s linear 1.5s forwards;;}
-main #title .position_wrap .chat_wrap .chat4 {right:10%; top:40%; animation:chat 1s linear 2s forwards; ;}
+main #title .position_wrap .chat_wrap .chat2 {right:15%; top:20%; animation:chat 1s linear 1s forwards;}
+main #title .position_wrap .chat_wrap .chat3 {left:10%; top:40%; animation:chat 1s linear 1.5s forwards;}
+main #title .position_wrap .chat_wrap .chat4 {right:10%; top:40%; animation:chat 1s linear 2s forwards;}
 main #title .position_wrap .chat_wrap .chat_deco {
     width:236px; height:99px;
     background-size:contain; background-repeat:no-repeat;
@@ -71,6 +71,7 @@ main #title .position_wrap .chat_wrap .deco1 {background-image:url(../images/bub
 main #title .position_wrap .chat_wrap .deco2 {background-image:url(../images/bubble_gray_right.png); bottom:60%; right:10%; animation:chat 0.8s linear 0.5s forwards;}
 main #title .position_wrap .chat_wrap .deco3 {background-image:url(../images/bubble_gray_right.png); bottom:30%; right:5%; animation:chat 0.8s linear 0.7s forwards;}
 main #title .position_wrap .chat_wrap .deco4 {background-image:url(../images/bubble_gray_left.png); bottom:10%; left:20%; animation:chat 0.8s linear 1s forwards;}
+main #title .position_wrap .chat_wrap .deco5 {background-image:url(../images/bubble_gray_right.png); bottom:15%; right:20%; animation:chat 0.8s linear 0.7s forwards;}
 
 
 
@@ -142,7 +143,7 @@ main #contents1 .wrap ul li .info .desc {
 /* contents2 */
 main #contents2 {
     background:#FFF8D1;
-    padding:100px 0;
+    padding:100px 0 0;
 }
 main #contents2 {}
 main #contents2 h2 {text-align:center; margin-bottom:50px;}
@@ -159,9 +160,7 @@ main #contents2 h2 span {
     font-size:3rem; letter-spacing:-0.04em; line-height:60px;
 }
 main #contents2 ul {}
-main #contents2 ul li {
-    height:550px; 
-}
+main #contents2 ul li {height:550px;}
 main #contents2 ul li:nth-child(2n+1) {background:#fff;}
 main #contents2 ul li .wrap {
     height:100%;

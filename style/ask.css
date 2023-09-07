@@ -2,6 +2,7 @@ main {}
 /* bnr */
 main #bnr {
     background:url(../images/bnr.jpg) no-repeat; height:400px;
+    background-position:right;
     background-size:cover;
     display:flex; flex-flow:column nowrap; justify-content:center;
 }
@@ -84,7 +85,9 @@ main #contents #ask_form fieldset #address {
 main #contents #ask_form fieldset #address dt {}
 main #contents #ask_form fieldset #address dd {
     width:calc(100% - 190px)
-
+}
+main #contents #ask_form fieldset #address .postcode {
+    display:flex; align-items:center; justify-content:space-between;
 }
 main #contents #ask_form fieldset #address dd input {
     background:#FFFBE7; border-radius:5px; height:32px;
@@ -99,9 +102,7 @@ main #contents #ask_form fieldset #address dd #address_btn {
     cursor:pointer;
 }
 main #contents #ask_form fieldset #address dd #address_btn:hover {background:#FFB830}
-main #contents #ask_form fieldset #address dd span {
-    
-}
+main #contents #ask_form fieldset #address dd span {}
 main #contents #ask_form fieldset #address dd #sample6_address {width:100%;}
 main #contents #ask_form fieldset #address dd #sample6_detailAddress {width:100%;}
 main #contents #ask_form fieldset #address dd #sample6_extraAddress {width:100%;}
@@ -113,7 +114,7 @@ main #contents #ask_form fieldset #ask_contents dd #ask_box {
     width:100%; height:190px; resize:none; border-radius:5px; border:none; background:#FFFBE7;
     padding:10px;
 }
-#개인정보수집
+/* 개인정보수집 */
 main #contents #ask_form fieldset #agree_check {}
 main #contents #ask_form fieldset #agree_check dt {
     width:300px;
