@@ -3,7 +3,7 @@ main {}
 .wrap {width:1440px; margin:0 auto;}
 /* title_section */
 main #title_section {
-    padding:100px 0;
+    padding:200px 0 100px;
 }
 main #title_section .wrap {}
 main #title_section .wrap .title {text-align:center; margin-bottom:65px; animation:title 1s linear;}
@@ -26,9 +26,10 @@ main #title_section .wrap .img {
 }
 main #title_section .wrap .img p {
     margin-right:55px;
-    opacity:0;
+    opacity:0; text-align:center;
 }
-main #title_section .wrap .img p img {}
+main #title_section .wrap .img p:last-child {margin-right:0;}
+main #title_section .wrap .img p img {width:100%;}
 main #title_section .wrap .img p:nth-child(1) {animation:scale 1s forwards;}
 main #title_section .wrap .img p:nth-child(2) {animation:scale 1s 0.5s forwards;}
 main #title_section .wrap .img p:nth-child(3) {animation:scale 1s 1s forwards;}
@@ -71,13 +72,16 @@ main #book_section .line .subject h2 {
 main #book_section .line .subject ul {
     display:flex;
 }
-main #book_section .line .subject ul li {margin-right:20px;}
+main #book_section .line .subject ul li {margin-right:20px; margin-bottom:40px;}
 main #book_section .line .subject ul li:last-child {margin-right:0;}
-main #book_section .line .subject ul li a {text-align:center; }
+main #book_section .line .subject ul li a {
+    text-align:center; display:flex; flex-flow:column nowrap;
+    align-items:center;
+}
 main #book_section .line .subject ul li a >* {margin-bottom:25px;}
 main #book_section .line .subject ul li a >*:last-child {margin-bottom:0}
-main #book_section .line .subject ul li a .book {}
-main #book_section .line .subject ul li a .book img {transition:all 0.2s;}
+main #book_section .line .subject ul li a .book {width:336px; height:417px;}
+main #book_section .line .subject ul li a .book img {transition:all 0.2s; width:100%;}
 main #book_section .line .subject ul li a:hover .book img {transform:scale(1.05)} 
 main #book_section .line .subject ul li a h3 {
     font-family:'aggro_m'; 

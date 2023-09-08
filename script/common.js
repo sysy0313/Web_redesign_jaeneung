@@ -38,10 +38,15 @@ m_nav_btn.addEventListener('click', function(e){
 // m_nav_sub
 const m_gnb_li = document.querySelectorAll('#m_gnb > li:nth-child(2) > a, #m_gnb > li:nth-child(3) > a, #m_gnb > li:nth-child(3) > a, #m_gnb > li:nth-child(4) > a, #m_gnb > li:nth-child(5) > a ')
 const m_gnb_sub = document.querySelectorAll('#m_gnb .sub')
+const more = document.querySelectorAll('#m_gnb > li > a > img')
 m_gnb_li.forEach(function(target, index){
     target.addEventListener('click', function(e){
         e.preventDefault();
         for(let i of m_gnb_sub){i.classList.remove('active')}
         m_gnb_sub[index].classList.add('active')
-    })
+        for(let i of m_gnb_li){i.classList.remove('active')}
+        target.classList.add('active')
+        for(let i of more){i.classList.remove('active')}
+        more[index].classList.add('active')
+    })  
 })

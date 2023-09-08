@@ -1,6 +1,7 @@
 main {}
 /* bnr */
 main #bnr {
+    padding-top:100px;
     background:url(../images/bnr.jpg) no-repeat; height:400px;
     background-position:right;
     background-size:cover;

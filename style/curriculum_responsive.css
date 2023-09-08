@@ -1,0 +1,81 @@
+/* curriculum 반응형 */
+@media screen and (max-width:1500px){
+    .wrap {width:1300px;}
+    main #book_section .line .subject ul li a .book {width:280px; height:auto;}
+}/* 1500 end */
+@media screen and (max-width:1350px){
+    .wrap {width:calc(100% - 30px)}
+}/* 1350 end */
+@media screen and (max-width:1260px){
+    main #title_section .wrap .img p {margin-right:30px;}
+    main #title_section .wrap .img p:last-child {margin-right:0;}
+    main #book_section .line .subject ul li a .book {width:250px;}
+    main #book_section .line .subject ul li a h3 {font-size:1.5rem;}
+}/* 1260 end */
+@media screen and (max-width:1180px){
+    main #title_section .wrap .img p img {width:90%;}
+}/* 1180 end */
+@media screen and (max-width:1160px){
+    main #txt .wrap p {font-size:1.1rem;}
+    main #book_section .line .subject h2 {font-size:1.5rem; padding:12px 17px 8px;}
+    main #book_section .line .subject ul li a >* {margin-bottom:20px;}
+    main #book_section .line .subject ul li a .book {width:200px;}
+    main #book_section .line .subject ul li a h3 {font-size:1.3rem;}
+    main #book_section .line .subject ul li a .info {font-size:1.1rem;}
+    main #book_section .line .subject ul li a .age span {font-size:1.1rem; padding:5px 12px; margin-right:20px;}
+    main #book_section .line .subject ul li a .age em {font-size:1.1rem;}
+}/* 1160px end */
+@media screen and (max-width:980px){
+    main #book_section .line .subject ul {flex-flow:row wrap;}
+    main #book_section .line .subject ul li a {margin-bottom:20px;}
+}/* 980 end */
+@media screen and (max-width:820px){
+    main #book_section .line3 {flex-flow:row wrap;}
+    main #book_section .line4 {flex-flow:row wrap; align-items:flex-start;}
+    main #book_section .line4 .border:nth-child(4) {display:none;}
+    .subject5, .subject6 {margin-bottom:80px;}
+}/* 820 end */
+@media screen and (max-width:755px){
+    main #book_section .line3 .border {display:none;}
+}
+@media screen and (max-width:720px){
+    .subject3 {margin-bottom:80px;}
+}/* 720 end */
+@media screen and (max-width:700px){
+    main #title_section .wrap .title h1 {font-size:1.5rem;}
+    main #title_section .wrap .title p:nth-child(2), main #title_section .wrap .title p:nth-child(3) {
+        font-size:2rem;
+    } 
+    main #txt .wrap h2 {font-size:1.75rem; margin-bottom:40px;}
+}/* 700 end */
+@media screen and (max-width:530px){
+    main #txt .wrap h2 {font-size:1.35rem; margin-bottom:25px;}
+    main #txt .wrap p {font-size:1rem; line-height:30px;}
+}/* 530 end */
+@media screen and (max-width:490px){
+    .border {display:none;}
+}/* 490 end */
+@media screen and (max-width:470px){
+    main #title_section .wrap .title h1 {font-size:1.2rem;}
+    main #title_section .wrap .title p:nth-child(2), main #title_section .wrap .title p:nth-child(3) {
+        font-size:1.5rem;
+    } 
+    main #title_section .wrap .img p:nth-child(2),
+    main #title_section .wrap .img p:nth-child(3) {display:none;}
+    main #title_section .wrap .img p {margin-right:0; }
+}
+@media screen and (max-width:485px){
+    main #book_section .line .subject ul {justify-content:center;}
+    main #book_section .line3 {justify-content:center;}
+    main #book_section .line4 {justify-content:center;}
+}/* 485 end */
+@media screen and (max-width:420px){
+    main #txt .wrap h2 {font-size:1.1rem; margin-bottom:22px; letter-spacing:-0.06em;}
+    main #txt .wrap p {font-size:0.9rem; } 
+}
+@media screen and (max-width:370px){
+    main #title_section .wrap .title h1 {font-size:1.2rem; margin-bottom:10px;}
+    main #title_section .wrap .title p:nth-child(2), main #title_section .wrap .title p:nth-child(3) {
+        font-size:1.3rem;
+    } 
+}

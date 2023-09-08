@@ -1,18 +1,14 @@
 /* system 반응형 */
-@media screen and (max-width:1700px){
-    main #title .position_wrap .chat_wrap .chat1 {left:10%; top:20%;}
-    main #title .position_wrap .chat_wrap .chat2 {right:10%; top:20%;}
-    main #title .position_wrap .chat_wrap .chat3 {left:5%; top:40%;}
-    main #title .position_wrap .chat_wrap .chat4 {right:5%; top:40%;}
-}/* 1700end */
+
 @media screen and (max-width:1500px){
     .wrap {width:1300px}
+    main #title .position_wrap .chat_wrap .chat1 {left:7%; top:20%;}
+    main #title .position_wrap .chat_wrap .chat2 {right:7%; top:35%;}
+    main #title .position_wrap .chat_wrap .chat3 {left:5%; top:50%;}
+    main #title .position_wrap .chat_wrap .chat4 {right:5%; top:65%;}
 }/* 1500 end */
 @media screen and (max-width:1420px){
-    main #title .position_wrap .chat_wrap .chat1 {left:7%; top:20%;}
-    main #title .position_wrap .chat_wrap .chat2 {right:7%; top:20%;}
-    main #title .position_wrap .chat_wrap .chat3 {left:3%; top:40%;}
-    main #title .position_wrap .chat_wrap .chat4 {right:3%; top:40%;}
+
 }/* 1420 end */
 @media screen and (max-width:1300px){
     main #title .position_wrap .chat_wrap .chat {
@@ -36,11 +32,21 @@
     main #contents2 ul li .wrap .txt .info {font-size:1.5rem;}
 }/* 1250 end */
 @media screen and (max-width:1140px){
-    /* position */
-    main #title .position_wrap .chat_wrap .chat1 {left:3%; top:20%;}
-    main #title .position_wrap .chat_wrap .chat2 {right:3%; top:20%;}
-    main #title .position_wrap .chat_wrap .chat3 {left:1%; top:40%;}
-    main #title .position_wrap .chat_wrap .chat4 {right:1%; top:40%;}
+    main #title {height:700px;}
+    main #title .position_wrap .bg {width:400px; height:600px;}
+    main #title .position_wrap .photo {width:300px; height:300px;}
+    /* chat*/
+    main #title .position_wrap .chat_wrap .chat1 {left:1%; bottom:30%; top:auto;}
+    main #title .position_wrap .chat_wrap .chat2 {right:1%; bottom:20%; top:auto;}
+    main #title .position_wrap .chat_wrap .chat3 {left:1%; bottom:15%; top:auto;}
+    main #title .position_wrap .chat_wrap .chat4 {right:1%; bottom:5%; top:auto;}
+    /* deco */
+    main #title .position_wrap .chat_wrap .deco1 {bottom:10%; left:5%;}
+    main #title .position_wrap .chat_wrap .deco2 {bottom:20%; right:10%;}
+    main #title .position_wrap .chat_wrap .deco3 {bottom:5%; right:7%;}
+    main #title .position_wrap .chat_wrap .deco4 {display:none;}
+    main #title .position_wrap .chat_wrap .deco5 {display:none;}
+
 }/* 1140 end */
 @media screen and (max-width:1050px){
     .wrap {width:calc(100% - 30px)}
@@ -67,11 +73,36 @@
     main #contents2 ul li .wrap .txt .title h3 {font-size:1.5rem;}
     main #contents2 ul li .wrap .txt .info {font-size:1.3rem;}
 }/* 900 end */
+@media screen and (max-width:850px){
+    main #title .position_wrap .bg {width:300px; height:500px;}
+    main #title .position_wrap .photo {width:300px; height:300px;}
+    /* chat*/
+    main #title .position_wrap .chat_wrap .chat {
+        width:250px; height:150px; padding:25px 30px 20px 30px;
+        font-size:0.9rem; line-height:25px;
+    }
+}/* 850 end */
 @media screen and (max-width:800px){
     main #contents1 .wrap ul li .img {width:27%;}
     main #contents1 .wrap ul li .info {width:65%;}
+    /* bnr */
+    main #bnr {height:350px;}
+    main #bnr p {font-size:2.5rem; margin-bottom:50px;}
+    main #bnr a {font-size:1.5rem; padding:12px 25px;}
 }/* 800 end */
 @media screen and (max-width:740px){
+    main #title .position_wrap .bg {width:250px; height:250px;}
+    main #title .position_wrap .photo {width:250px; height:250px;}
+    /* chat*/
+    main #title .position_wrap .chat_wrap .chat {
+        width:200px; height:150px; padding:20px;
+        font-size:0.8rem; line-height:22px;
+    }
+    main #title .position_wrap .chat_wrap .chat_deco {width:150px;}
+    main #title .position_wrap .chat_wrap .deco1 {bottom:10%; left:5%;}
+    main #title .position_wrap .chat_wrap .deco2 {bottom:15%; right:10%;}
+    main #title .position_wrap .chat_wrap .deco3 {bottom:5%; right:7%;}
+    /* contennts1 */
     main #contents1 .wrap ul li .img {height:100px;}
     main #contents1 .wrap ul li .info h3 em {font-size:1.5rem;}
     main #contents1 .wrap ul li .info .desc {font-size:1.2rem;}
@@ -81,8 +112,14 @@
 @media screen and (max-width:670px){
     main #contents2 ul li .wrap .photo {display:none;}
     main #contents2 ul li .wrap .txt {width:100%;}
+    /* bnr */
+    main #bnr {height:300px;}
+    main #bnr p {font-size:2rem; margin-bottom:35px;}
+    main #bnr a {font-size:1.3rem; padding:10px 20px;}
 }/* 670 end */
 @media screen and (max-width:600px){
+    main #title h1 span {font-size:2rem; line-height:50px}
+    main #title h1 em {font-size:2rem; line-height:50px}
     main #contents1 .wrap h2 span {font-size:2rem; line-height:50px;}
     main #contents1 .wrap h2 em  {font-size:2.5rem; line-height:50px;}
     main #contents1 .wrap ul li .info h3 {margin-bottom:5px;}
@@ -91,22 +128,58 @@
     main #contents2 h2 em {font-size:2.5rem; line-height:50px;}
     main #contents2 h2 span {font-size:2rem; line-height:50px;}
 }/* 600 end */
+@media screen and (max-width:530px){
+    /* chat*/
+    main #title .position_wrap .chat_wrap .chat1 {left:1%; bottom:30%; }
+    main #title .position_wrap .chat_wrap .chat2 {right:1%; bottom:20%; }
+    main #title .position_wrap .chat_wrap .chat3 {left:1%; bottom:15%;}
+    main #title .position_wrap .chat_wrap .chat4 {right:1%; bottom:5%; }
+    /* deco */
+    main #title .position_wrap .chat_wrap .chat_deco {width:150px;}
+    main #title .position_wrap .chat_wrap .deco1 {bottom:10%; left:5%;}
+    main #title .position_wrap .chat_wrap .deco2 {bottom:15%; right:10%;}
+    main #title .position_wrap .chat_wrap .deco3 {bottom:5%; right:7%;}
+}/* 530 end */
 @media screen and (max-width:510px){
     main #contents1 .wrap ul li {flex-flow:column nowrap; border-radius:50px;}
     main #contents1 .wrap ul li .img {height:80px; margin-bottom:20px;}
     main #contents1 .wrap ul li:first-child .img {width:150px;}
     main #contents1 .wrap ul li .info {width:100%; text-align:center;}
+    /* bnr */
+    main #bnr {height:250px;}
+    main #bnr p {font-size:1.5rem; margin-bottom:30px;}
+    main #bnr a {font-size:1.1rem; padding:8px 17px;}
 }/* 510 end */
 @media screen and (max-width:470px){
     main #contents2 ul li .wrap .txt .title {flex-flow:column nowrap; align-items:center;}
-    main #contents2 ul li .wrap .txt .title p {margin-right:0; margin-bottom:20px;}
-}
+    main #contents2 ul li .wrap .txt .title p {
+        margin-right:0; margin-bottom:20px;
+        font-size:1rem; padding:8px 15px 5px;
+    }
+    main #contents2 ul li .wrap .txt .info {font-size:1.2rem; line-height:35px;}
+}/* 470 end */
 @media screen and (max-width:440px){
     main #contents1 .wrap ul li .info .desc {font-size:0.9rem; line-height:28px;}
-}
+}/* 440 end */
+@media screen and (max-width:420px){
+    main #contents2 ul li {height:250px;}
+    main #contents2 ul li .wrap .txt .info {font-size:1.1rem; line-height:34px; letter-spacing:-0.06em;}
+}/* 420 end */
 @media screen and (max-width:400px){
+    main #title .position_wrap .photo {width:200px; height:200px;}
+    main #title .position_wrap .chat_wrap .chat2 {right:1%; bottom:22%; }
+    main #title .position_wrap .chat_wrap .chat4 {display:none;}
     main #contents1 .wrap h2 span {font-size:1.8rem; line-height:40px;}
     main #contents1 .wrap h2 em  {font-size:2rem; line-height:40px;}
     main #contents2 h2 em {font-size:2rem; line-height:40px;}
     main #contents2 h2 span {font-size:1.8rem; line-height:40px;}
-}
+    main #contents2 ul li .wrap .txt .info {font-size:1rem; line-height:30px; letter-spacing:-0.1em;}
+}/* 400 end */
+@media screen and (max-width:360px){
+    main #contents2 ul li .wrap .txt .title h3 
+    main #contents2 ul li .wrap .txt .info {font-size:0.9rem; line-height:29px;}
+    /* bnr */
+    main #bnr {height:200px;}
+    main #bnr p {font-size:1.3rem; margin-bottom:25px;}
+    main #bnr a {font-size:1.rem; padding:6px 15px;}
+}/* 360 end */

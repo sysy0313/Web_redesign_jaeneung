@@ -4,7 +4,6 @@
 const contents1 = document.querySelector('#contents1')
 const con1_title = document.querySelector('#contents1 .wrap h2')
 const underline = document.querySelectorAll('#contents1 .wrap ul li .info h3 span')
-console.log(con1_title)
 window.addEventListener('scroll', function(){
     if(window.pageYOffset >= contents1.offsetTop-1000){
         for(let i of underline){i.classList.add('active')};
@@ -27,7 +26,6 @@ window.addEventListener('scroll', function(){
 // con2 내용
 const con2_li = document.querySelectorAll('#contents2 ul li')
 const con2_li_wrap = document.querySelectorAll('#contents2 ul li .wrap')
-console.log(con2_li, con2_li_wrap)
 con2_li.forEach(function(target, index){
     window.addEventListener('scroll', function(){
         if(window.pageYOffset >= target.offsetTop-1000){
